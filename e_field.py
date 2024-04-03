@@ -2,7 +2,7 @@ import sys
 sys.path.append("./")
 
 from manim_imports_ext import *
-from objects import *
+from _2023.objects import *
 
 
 def get_influence_ring(center_point, color=WHITE, speed=2.0, max_width=3.0, width_decay_exp=0.5):
