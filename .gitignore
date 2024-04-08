@@ -3,5 +3,6 @@ custom/
 figs/
 outputs/
 temp/
+media/
 
 .DS_Store
