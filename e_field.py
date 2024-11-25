@@ -2,7 +2,8 @@ import sys
 sys.path.append("./")
 
 from manim_imports_ext import *
-from _2023.objects import *
+from _2023.optics_puzzles.objects import *
+
 
 
 def get_influence_ring(center_point, color=WHITE, speed=2.0, max_width=3.0, width_decay_exp=0.5):
@@ -151,7 +152,7 @@ class IntroduceEField(InteractiveScene):
         d_label = Tex("r = 0.00", font_size=36)
         d_label.next_to(d_line, DOWN, buff=0.35)
         d_label.add_updater(lambda m: m.match_x(d_line))
-        dist_decimal = d_label.make_number_changable("0.00")
+        dist_decimal = d_label.make_number_changeable("0.00")
 
         def get_d():
             return get_norm(charges[0].get_center() - charges[1].get_center())
@@ -425,7 +426,7 @@ class IntroduceEField(InteractiveScene):
 
         time_label = Tex("t = 0.00")
         time_label.to_corner(UL)
-        time_decimal = time_label.make_number_changable("0.00")
+        time_decimal = time_label.make_number_changeable("0.00")
         time_decimal.add_updater(lambda m: m.set_value(ring.time))
 
         start_point = charges[0].get_center().copy()
@@ -890,7 +891,6 @@ class AltEFieldIntroduction(IntroduceEField):
             dist = get_norm(q1.get_center() - q2.get_center())
             self.add(ring)
             self.play(wiggle_charge(q1, sign * amp * UP))
-            globals().update(locals())
             self.wait_until(lambda: ring.get_radius() > dist)
             amp *= 0.4
         self.wait(4)
@@ -2298,3 +2298,4 @@ class ResponsiveCharge(InteractiveScene):
             )
         )
         self.wait(4)
+
