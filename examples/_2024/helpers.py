@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from manim_imports_ext import *
+from src.manim_imports_ext import *
 
 from typing import TYPE_CHECKING
 import warnings
