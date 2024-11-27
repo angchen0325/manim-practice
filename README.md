@@ -15,8 +15,8 @@ Manim Practice/
 ｜   ｜-- feature_engineering.py # feature engineering module
 ｜   ｜-- model.py               # model definition and training
 ｜   ｜-- predict.py             # prediction module
-｜-- examples/         # example folder for storing raw and processed data
-｜-- notes.md 
+｜-- examples/         # example folder for storing the code for 3b1b's videos
+｜-- notes.md          # learning notes and insights
 ｜-- requirements.txt  # dependencies
 ｜-- README.md         # project documentation
 ```
