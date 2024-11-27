@@ -1,5 +1,6 @@
 import sys
-sys.path.append("./")
+sys.path.append("../../../")
+sys.path.append("../../")
 
 from src.manim_imports_ext import *
 from _2023.optics_puzzles.objects import *

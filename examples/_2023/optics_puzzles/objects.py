@@ -1,5 +1,8 @@
 from __future__ import annotations
 
+import sys
+sys.path.append("../../../")
+
 from src.manim_imports_ext import *
 from matplotlib import colormaps
 
