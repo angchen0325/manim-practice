@@ -8,15 +8,14 @@ This wonderful engine have different versions:
 
 ```bash
 Manim Practice/
-｜-- notebooks/        # Jupyter Notebooks for data analysis and experiments
-｜-- scripts/          # Jupyter Notebooks for data analysis and experiments
-｜-- src/              # core code
-｜   ｜-- data_loader.py         # data loading module
-｜   ｜-- feature_engineering.py # feature engineering module
-｜   ｜-- model.py               # model definition and training
-｜   ｜-- predict.py             # prediction module
-｜-- examples/         # example folder for storing the code for 3b1b's videos
-｜-- notes.md          # learning notes and insights
-｜-- requirements.txt  # dependencies
-｜-- README.md         # project documentation
+|-- notebooks/        # Jupyter Notebooks for experiments and documentation
+|-- scripts/          # Independent .py scripts for specific tasks or tests
+|-- src/              # Core code (for reusable components or modularized functions)
+    |-- utils.py           # Data loading module
+    |-- data_processing.py # Data processing and feature engineering
+    |-- model_training.py  # Model definition and training
+|-- examples/         # Case learning for 3b1b's videos
+|-- notes.md          # Notes and insights gained during learning
+|-- requirements.txt  # Dependencies
+|-- README.md         # Project documentation
 ```
