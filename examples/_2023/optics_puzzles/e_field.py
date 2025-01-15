@@ -2299,4 +2299,3 @@ class ResponsiveCharge(InteractiveScene):
             )
         )
         self.wait(4)
-
